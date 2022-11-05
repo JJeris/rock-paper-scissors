@@ -1,3 +1,4 @@
+// From Node.js
 const prompt = require('prompt-sync')();
 
 // let limit = +prompt("Limit:"); 
