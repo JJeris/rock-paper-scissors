@@ -1,0 +1,155 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* SETUP */
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* STRUCTURE */
+
+body {
+    display: flex;
+    /* Makes it a flex container. */
+    flex-direction: column;
+    /* makes the direction down not side to side. */
+    min-height: 100vh;
+    /* Min height 100vh ir 100 viewport height, needed to push footer down.*/
+}
+
+main { 
+    flex-grow: 1; /* Push the footer down*/
+}
+
+.inner-column {
+    border: 1px solid red;
+    display: block; 
+
+    padding: 10pc;
+    width: 90%;
+
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+header .inner-column,
+footer .inner-column {
+    padding: 2em;
+}
+
+/* TYPOGRAPHY */
+
+
+/* MODULES */
+
+header {
+    background-color: lightgrey;
+}
+header .inner-column {
+    display: flex;
+}
+header .inner-column {
+    /* border: 1px solid red; */
+    display: flex;
+    /* To center the title */
+    justify-content: center;
+    text-align: center;
+}
+
+/* header .inner-column ul { */
+    /* margin-top: 5px; NO*/
+    /* display: flex; */
+    /* border: 1px solid red; */
+    /* margin-left: auto; */
+    /* gap: 16px; */
+    /* flex-wrap: wrap; */
+    /* justify-content:space-between; NO*/
+/* } */
+
+.choices {
+
+}
+
+.choices .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choices .text-content h1 {
+    text-align: center;
+}
+
+.choices .text-content ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.choices .text-content li div {
+    border: 1px solid red;
+    height: 32px;
+}
+
+
+
+
+
+
