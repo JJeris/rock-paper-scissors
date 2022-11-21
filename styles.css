@@ -73,7 +73,7 @@ main {
 }
 
 .inner-column {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: block; 
 
     padding: 10pc;
@@ -144,7 +144,7 @@ header .inner-column {
 }
 
 .choices .text-content li div {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 32px;
 }
 
