@@ -148,6 +148,10 @@ header .inner-column {
     height: 32px;
 }
 
+.reset {
+    display: none;
+}
+
 
 
 
