@@ -93,14 +93,21 @@ footer .inner-column {
 
 /* TYPOGRAPHY */
 
+.logo {
+    font-family: Helvetica, sans-serif;
+    font-size: 52px;
+}
+
+.loud-voice {
+    font-family: Helvetica, sans-serif;
+    font-size: 32px;
+}
+
 
 /* MODULES */
 
 header {
     background-color: lightgrey;
-}
-header .inner-column {
-    display: flex;
 }
 header .inner-column {
     /* border: 1px solid red; */
@@ -120,9 +127,21 @@ header .inner-column {
     /* justify-content:space-between; NO*/
 /* } */
 
-.choices {
+/* FIX THE MIDDLE OF THE PAGE, NO OVERFLOW AND STUFF */
+
+.choices .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .choices {
 
 }
+
+.choices {
+
 
 .choices .text-content {
     display: flex;
@@ -145,14 +164,48 @@ header .inner-column {
 
 .choices .text-content li div {
     /* border: 1px solid red; */
-    height: 32px;
-}
+    /* height: 32px; */
+/* } */ 
 
 .reset {
     display: none;
 }
 
 
+footer {
+    background-color: lightgray;
+}
+
+footer .inner-column {
+    /* border: 1px solid red; */
+    display: flex;
+    /* To center the title */
+    justify-content: center;
+    text-align: center;
+    
+}
+
+footer .text-content {
+    margin-top: 1em;
+    color: lightgray;
+    /* flex-direction: column; */
+}
+
+footer .text-content a img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;    
+    /* height: 50px; */
+    /* width: auto; */
+}
+
+footer .text-content a {
+    display: block;
+    max-width: 50px;
+    max-height: auto;
+    box-sizing: border-box;
+}
 
 
 
