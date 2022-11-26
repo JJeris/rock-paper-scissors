@@ -1,0 +1,89 @@
+
+<!-- 
+<body>
+    <header>
+        <div class="inner-column">
+            <h1 class="logo">ROCK PAPER SCISSORS</h1>
+        </div>
+    </header>
+    <main>
+        <section class="choices">
+            <div class="inner-column">
+                <div class="text-content loud-voice">
+                    <h1 class="winner">Make your play </h1>
+                    <h3 class="result-message">First to 5 points wins the game</h3>
+                    <div class="choice-selection">
+                        <ul class="choice-list">
+                            <li class="choice-btn rock" id = "rock">R</li>
+                            <li class="choice-btn paper" id = "paper">P</li>
+                            <li class="choice-btn scissors" id = "scissors">S</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        <section>
+
+        <section class="results">
+            <div class="inner-column">
+                <div class="text-content loud-voice">
+                    <ul class="score-list">
+                        <div class="computer-score">Computer: 0</div>
+                        <div class="player-score">Player: 0</div>
+                    </ul>
+                    <div class="computer-choice">Computer chose ?</div>
+                    <div class="player-choice">Player chose ?</div>
+                    <button class="reset" onclick="resetGame()">Reset game</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="contact-link">
+        <div class="inner-column">
+            <div class="text-content">
+                <a href="https://github.com/JJeris"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub link."></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    
+</body> 
+ <div class="inner-column">
+                <div class="graphic-diptych">
+                    <div class="text-content player-side">
+                        <div class="player-content">
+                            <div class="player-choice calm-voice">Player chose ?</div>
+                            <div class="player-score calm-voice">Player: 0</div>
+                        </div>
+                    </div>
+                    <div class="text-content computer-side">
+                        <div class="computer-content">
+                            <div class="computer-choice calm-voice">Computer chose ?</div>
+                            <div class="computer-score calm-voice">Computer: 0</div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="text-content reset-btn-div">
+                    <button class="reset" onclick="resetGame()">Reset game</button>
+                </div>
+                
+            </div>
+            <div class="graphic-diptych">
+                    <div class="text-content player-side">
+                        <div class="player-content">
+                            <div class="player-choice calm-voice">Player chose ?</div>
+                            <div class="player-score calm-voice">Player: 0</div>
+                        </div>
+                    </div>
+                    <div class="text-contnet computer-side">
+                        <div class="computer-content">
+                            <div class="computer-choice calm-voice">Computer chose ?</div>
+                            <div class="computer-score calm-voice">Computer: 0</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-content reset-btn-div">
+                    <button class="reset" onclick="resetGame()">Reset game</button>
+                </div>
+-->

@@ -4,64 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <title>Rock Paper Scissors | JJeris</title>
 </head>
 <body>
     <header>
         <div class="inner-column">
-            <h1 class="logo">ROCK PAPER SCISSORS</h1>
+            <h1 id="logo" class="logo"> <a href="#logo">ROCK PAPER SCISSORS</a></h1>
         </div>
     </header>
     <main>
-        <section class="choices">
+        <section class="welcome">
             <div class="inner-column">
                 <div class="text-content">
-                    <div class="choice-selection loud-voice">
-                        <h1>Make your play</h1>
-                        <h3>First to 5 points wins the game</h3>
+                    <div class="start">
+                        <h2 class="winner loud-voice">Make your play</h1>
+                        <p class="result-message loud-voice">First to 5 points wins the game</p>
                         <ul class="choice-list">
-                            <li><div class="choice-btn rock" id = "rock">ROCK</div></li>
-                            <li><div class="choice-btn paper" id = "paper">PAPER</div></li>
-                            <li><div class="choice-btn scissors" id = "scissors">SCISSORS</div></li>
+                            <li class="choice-btn rock choice-voice" id="rock"><img src="img/rock.svg" alt="Rock"></li>
+                            <li class="choice-btn paper choice-voice" id="paper"><img src="img/paper.svg" alt="Paper"></li>
+                            <li class="choice-btn scissors choice-voice" id="scissors"><img src="img/scissors.svg" alt="Scissors"></li>
                         </ul>
                     </div>
                 </div>
             </div>
-        <section>
+        </section>
         <section class="results">
             <div class="inner-column">
-                <div class="text-content loud-voice">
+                <div class="text-content">
+                    <ul class="player-side side">
+                        <li class="player-choice calm-voice">Player chose ?</li>
+                        <li class="player-score calm-voice">Player: 0</li>
+                    </ul>
+                    <ul class="computer-side side">
+                        <li class="computer-choice calm-voice">Computer chose ?</li>
+                        <li class="computer-score calm-voice">Computer: 0</li>
+                    </ul>
                     
-                    <div class="winner"></div> 
-                
-                    <div class="computer-choice"></div>
-                    
-                    <div class="player-choice"></div>
-                    
-                    <div class="computer-score"></div>
-                    
-                    <div class="player-score"></div>
-                    
-                    <div class="tie-score"></div>
                     
 
-
-                    
+                </div>
+                <div class="text-content reset-btn-div">
                     <button class="reset" onclick="resetGame()">Reset game</button>
                 </div>
             </div>
+
+           
         </section>
     </main>
-    <footer class="contact-link">
+    <footer>
         <div class="inner-column">
+            
+            <a class="calm-voice" href="https://github.com/JJeris"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub link."></a>
+                
             <div class="text-content">
-                <a href="https://github.com/JJeris"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub link."></a>
+                
             </div>
         </div>
     </footer>
+    <!-- .js code meant for dom maniputlation and the games logic. -->
+    <script src="scripts/main.js"></script>
 
-    <script src="main.js"></script>
-    
 </body>
 </html>

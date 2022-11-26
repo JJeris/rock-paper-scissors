@@ -1,0 +1,359 @@
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*DEV-STYLES*/
+/*body * {
+    border: 1px solid blue;
+    padding: 2px;
+}*/
+
+/*SETUP*/ 
+* {
+    box-sizing: border-box;
+    word-break: break-word;
+}
+
+
+/*
+header, footer, main{
+    border: 3px solid red;
+}
+*/
+/* COLOR */
+
+html {
+    --white: #fbfbfa;
+    --darker-light-grey: #848c9e;
+    --beige-grey: #9ea2b6;
+    --light-blue: #788aae;
+    --dark-blue: #1e2752;
+    --dark-grey: #222536;
+}
+
+/*SETUP->IMAGES*/
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*SETUP->LINKS*/
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: blue;
+}
+
+/*...*/
+/*p a, li a, h2 a, h3 a {
+    color: blue;
+    text-decoration: underline;
+}/*
+
+/* IMG */
+footer .inner-column a {
+    display: block;
+    max-width: 50px;
+    max-height: auto;
+    transition: all 0.1s ease 0s;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all 0.1s ease 0s;
+    box-sizing: border-box;
+}
+
+
+/*STRUCTURE*/
+
+body {
+    /*https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/*/
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    /*
+    border: 3px solid orange;
+    */
+    /* overflow and bottom scroll bar*/
+    overflow-x: hidden;
+
+}
+
+main {
+    flex: 1;
+    background-color: var(--dark-grey);
+    
+}
+
+.inner-column {
+    display: block;
+    /*border: 2px solid blue;*/
+    padding: 10px;
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    /*border: 4px solid lime;*/
+}
+
+/* TYPOGRAPHY */
+.logo {
+    font-size: 52px;
+    font-weight: 700;
+    font-family: monospace, Helvetica, sans-serif;
+    
+}
+
+.choice-voice {
+    font-size: 52px;
+    font-weight: bold;
+    font-family: monospace, Helvetica, sans-serif;
+}
+
+.loud-voice {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Helvetica, sans-serif;
+}
+.calm-voice {
+    font-size: 32px;
+    line-height: 1.3;
+    font-family: Helvetica, sans-serif;
+}
+/*COMPONENTS*/
+
+/*MODULES*/
+
+
+    /*HEADER*/
+header {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 1em 0 1em 0;
+}
+header .inner-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 a:hover {
+    color: var(--white);
+}
+
+        /*WELCOME*/
+
+.welcome {
+    color: white;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.welcome .inner-column {
+    display: block;
+}        
+
+.welcome .text-content {
+    display: block;
+    /*border: 1px solid green;*/
+}
+.welcome .text-content .start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*border: 1px solid red;*/
+}
+.welcome .text-content .start .winner {
+    margin-bottom: 3vh;
+}
+
+/*
+.start .result-message{
+    text-align: center;
+}
+*/
+
+.welcome .text-content .choice-list {
+    display: flex;
+    gap: 5vh;
+    margin-top: 5vh;
+    flex-wrap: wrap;
+}
+
+/* @MEDIA  */
+@media (max-width: 700px) {
+    /*tag {*/
+        /*
+        display: flex;
+        flex-direction: row;
+        */
+    body {
+        font-size: 15px; 
+    }
+    .choice-list {
+        /*flex-direction: column;*/
+    }
+
+    
+}
+
+.welcome .text-content .choice-list .choice-btn {
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 2em;
+    height: auto;
+    text-align: center;
+    background-color: var(--beige-grey);
+}
+
+.welcome .text-content .choice-list .choice-btn:hover {
+    background-color:#d5d6d8;
+}
+
+
+.welcome .text-content .choice-list .choice-btn:active {
+    border-color: yellow;
+}
+
+/* RESULTS */
+
+.results .inner-column .text-content {
+
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+}
+.results .inner-column .text-content .side {
+    flex-basis: 50%;
+    color: var(--white);
+}
+
+.results .inner-column .text-content .player-side,
+.results .inner-column .text-content .computer-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+} 
+@media(min-width: 700px){
+    .results .inner-column .text-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+
+
+
+
+
+
+
+.reset-btn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    
+}
+
+.reset {
+    width: 100px;
+    background-color: var(--darker-light-grey);
+    display: none;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 32px;
+    width: 4em;
+    
+}
+.reset:hover {
+    color: black;
+    background-color:#d5d6d8;
+    
+}
+
+
+/* FOOTER */
+footer {
+    background-color: var(--light-blue);
+}
+
+footer .inner-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+    text-align: center;
+    
+}
+
+footer a img:hover {
+    opacity: 80%;
+}
+/*
+footer .inner-column .text-content {
+    margin: 1em;
+}
+*/
